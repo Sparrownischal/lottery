@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -35,4 +36,72 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+*{
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.header-container{
+  background: linear-gradient(to right, rgb(0, 0, 0) , rgb(77, 71, 71));
+  height: 20vh;
+  text-align: center;
+}
+
+.header-text{
+  color:rgba(255, 230, 0, 0.858);
+  padding: 30px 10px;
+}
+
+.main{
+  display: flex;
+  height: 80vh;
+}
+.main div{
+  /* width: 100%; */
+  /* max-width: 25em; */
+
+}
+.main .first{
+  background-color: red;
+  width: 25%;
+}
+.main .second{
+  background-color: white;
+  width: 50%;
+}
+.main .third{
+  /* background-color: white; */
+  width: 25%;
+}
+
+.selected-container{
+  height: 100%;
+  border: 5px solid #cdcd0a;
+  color: #cdcd0a;
+  padding: 10px 10px;
+}
+.total{
+  margin-bottom: 6px;
+}
+
+.numberButtons{
+  padding: 10px;
+}
+.numberbtn{
+  background-color: black;
+  padding: 5px;
+  /* height: 30px; */
+  width: 40px;
+  border: 3px solid rgb(210, 203, 203) ;
+  box-shadow: 0px 0px 5px #641313fa;
+  color: #cdcd0a;
+  font-size: 20px;
+}
+
+.numberbtn + .numberbtn{
+  margin: 0 20px;
+
 }

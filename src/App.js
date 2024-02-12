@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import NumberButtons from './components/NumberButtons';
+import './components/Selected';
+import Selected from './components/Selected';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
+      <header className="header-container">
+
+        <h1 className='header-text'> WHE WHE on D' Avenue </h1>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
+
+      <div className='main'>
+        <div className='first'>
+
+        </div>
+        <div className='second'>
+          <NumberButtons/>
+
+        </div>
+        <div className='third'>
+          <Selected/>
+        </div>
+
+      </div>
+
+
+      
     </div>
   );
 }
