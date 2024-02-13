@@ -33,75 +33,103 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-*{
+* {
   padding: 0;
   margin: 0%;
   box-sizing: border-box;
 }
 
-.header-container{
-  background: linear-gradient(to right, rgb(0, 0, 0) , rgb(77, 71, 71));
+.header-container {
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(77, 71, 71));
   height: 20vh;
   text-align: center;
 }
 
-.header-text{
-  color:rgba(255, 230, 0, 0.858);
+.header-text {
+  color: rgba(255, 230, 0, 0.858);
   padding: 30px 10px;
 }
 
-.main{
+.main {
   display: flex;
   height: 80vh;
 }
-.main div{
+
+.main div {
   /* width: 100%; */
   /* max-width: 25em; */
 
 }
-.main .first{
+
+.main .first {
   background-color: red;
   width: 25%;
 }
-.main .second{
+
+.main .second {
   background-color: white;
   width: 50%;
 }
-.main .third{
+
+.main .third {
   /* background-color: white; */
   width: 25%;
 }
 
-.selected-container{
+.selected-container {
   height: 100%;
   border: 5px solid #cdcd0a;
   color: #cdcd0a;
   padding: 10px 10px;
-}
-.total{
-  margin-bottom: 6px;
+  position: relative;
 }
 
-.numberButtons{
+.total {
+  position: absolute;
+  bottom: 10px;
+}
+
+.numberButtons {
   padding: 10px;
 }
-.numberbtn{
+
+.numberbtn {
   background-color: black;
-  padding: 5px;
-  /* height: 30px; */
-  width: 40px;
-  border: 3px solid rgb(210, 203, 203) ;
-  box-shadow: 0px 0px 5px #641313fa;
+  border: 3px solid rgb(210, 203, 203);
+  box-shadow: 0px 0px 5px #817373fa;
   color: #cdcd0a;
   font-size: 20px;
+  width: 17%;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 5px;
 }
 
-.numberbtn + .numberbtn{
-  margin: 0 20px;
+.numberContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.numberbtn:hover{
+  background-color: rgb(60, 65, 67);
+  border: 3px solid rgb(230, 60, 60);
+  box-shadow: 0px 0px 5px #e61313fa;
+
+}
+.first{
+  background: url(assets/background.jpg);
+  background-repeat: no-repeat;
+}
+.selectedButton{
+  background-color: rgb(60, 65, 67);
+  background: red;
 
 }

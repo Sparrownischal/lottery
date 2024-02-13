@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import NumberButtons from './components/NumberButtons';
-import './components/Selected';
 import Selected from './components/Selected';
+import First from './components/First';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
 
       <div className='main'>
         <div className='first'>
+          <First/>
 
         </div>
         <div className='second'>
