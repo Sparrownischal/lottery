@@ -7,12 +7,10 @@ function SelectedNumbers({ numbers, totalMoney }) {
                 {numbers.map((number, index) => (
                     <p key={index}>{number}</p>
                 ))}
-
             <div className='total'>
                 <p> <strong> Total Money:</strong> ${totalMoney.toFixed(2)}</p>
             </div>
         </div>
     );
 }
-
 export default SelectedNumbers;

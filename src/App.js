@@ -80,7 +80,6 @@ function App() {
             />
           ))}
 
-
           <div className='buttons-container'>
             <button onClick={handleClear}>Clear</button>
             <button onClick={handleSelectRandomNumbers}>Select Random Numbers</button>
